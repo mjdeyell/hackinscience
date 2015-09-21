@@ -12,6 +12,6 @@ def love_meet(input1, input2):
 
 
 def affair_meet(input1, input2, input3):
-    meet = list(set(input1).intersection(input2))
-    avoid = list(set(meet).difference(input3))
+    meet = list(set(input1).intersection(input3))
+    avoid = list(set(meet).difference(input2))
     return avoid
