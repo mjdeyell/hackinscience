@@ -8,6 +8,7 @@ import datetime
 fmt1 = '%Y %m %d'
 fmt2 = '%H:%M:%S'
 C = datetime.datetime.now()
+D = datetime.date.today()
 A = C.strftime(fmt1)
 B = C.strftime(fmt2)
-print("Today is " + str(A) + " and it is " + str(B))
+print("Today is " + str(D) + " and it is " + str(B))
