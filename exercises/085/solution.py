@@ -29,5 +29,5 @@ def sort_by_name(input):
     def getKey(item):
         return item[1]
 
-    outvar = sorted(grades, key=getKey, reverse=True)
+    outvar = sorted(grades, key=getKey)
     return outvar
