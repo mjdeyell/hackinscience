@@ -8,5 +8,5 @@ import sys
 file = sys.argv
 l = list(enumerate(file))
 for i in range(len(l)):
-    temp = list[i]
+    temp = l[i]
     print(str(temp[0]) + " " + temp[1])
