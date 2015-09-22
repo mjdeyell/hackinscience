@@ -15,10 +15,10 @@ def is_prime(number):
             if (p == 0):
                 prime = prime + 1
         if (prime == 1):
-            return 'True'
+            return True
         elif (prime > 1):
-            return 'False'
+            return False
         else:
             return 'Error'
     else:
-        return 'False'
+        return False
