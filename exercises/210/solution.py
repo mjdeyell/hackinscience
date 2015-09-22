@@ -8,6 +8,6 @@ import prime
 
 prime_sum = 0
 for i in range(1000):
-    if (prime.is_prime(i) == True):
+    if prime.is_prime(i) is True:
         prime_sum = prime_sum + i
 print(prime_sum)
