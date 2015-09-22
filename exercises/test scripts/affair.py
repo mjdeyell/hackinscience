@@ -8,5 +8,5 @@ input1 = ['II', 'IV', 'II', 'XIX', 'XV', 'IV', 'II']
 input3 = ['IV', 'III', 'II', 'XX', 'II', 'XX']
 input2 = ['XVIII', 'XIX', 'III', 'I', 'III', 'XVIII']
 
-meet = set(input1).intersection(input2)
+meet = list(set(input1).intersection(input2))
 avoid = set(meet).difference(input3)
