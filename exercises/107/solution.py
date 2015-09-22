@@ -28,5 +28,3 @@ def select_student(student_list, grade_threshold):
     return {'Accepted': sort_good,
             'Refused': sort_bad
             }
-
-
