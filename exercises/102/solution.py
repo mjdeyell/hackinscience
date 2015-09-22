@@ -54,15 +54,18 @@ def check_my_city(city):
          ]
 
     found = 0
-
+    zipcodes = []
     for i in range(len(velib)):
         station = dict(velib[i])
         if (station['city'] == city):
-            return {'stations_nb': station['number'],
-                    'zip_code': station['zip'],
-                    'city': station['city']
+            zipcodes.append(station['zip'])
                     }
             found = 1
 
     if (found == 0):
         return("Sorry! No station for your city has been found!")
+    elif (found > 0):
+        return {'stations_nb': len(zipcodes)
+                'zip_code': zipcodes
+                'city': city                
+                }
