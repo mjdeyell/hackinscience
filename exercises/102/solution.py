@@ -58,8 +58,7 @@ def check_my_city(city):
     for i in range(len(velib)):
         station = dict(velib[i])
         if (station['city'] == city):
-            return {
-                    'station_nbs': station['number'],
+            return {'station_nbs': station['number'],
                     'zip_code': station['zip'],
                     'city': station['city']
                     }
