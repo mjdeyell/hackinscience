@@ -6,7 +6,7 @@ Created on Mon Sep 21 10:38:13 2015
 """
 import sys
 "usage: ./solution.py a_number (an_operator +-*/%^) a_number"
-if (len(sys.argv) == 3):
+if (len(sys.argv) == 4):
     try:
         num1 = int(sys.argv[1])
         num2 = int(sys.argv[3])
