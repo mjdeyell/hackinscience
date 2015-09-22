@@ -13,13 +13,13 @@ def check_my_city(city):
           'zip': '93170-',
           'number': 31705,
           'latitude': 48.8645278209514,
-          'city': 'BAGNOLET',
+          'city': 'BAGNOLET-',
           'name': 'CHAMPEAUX (BAGNOLET)-',
           'longitude': 2.416170724425901
           },
          {'address': "52 RUE D'ENGHIEN / ANGLE RUE DU FAUBOURG POISSONIERE\
           - 75010 PARIS",
-          'zip': '75010',
+          'zip': '75010-',
           'number': 10042,
           'latitude': 48.87242006305313,
           'city': 'PARIS-',
@@ -58,7 +58,9 @@ def check_my_city(city):
     for i in range(len(velib)):
         station = dict(velib[i])
         if (station['city'] == city):
-            return(station)
+            return(station['number'])
+            return(station['zip'])
+            return(station['city'])
             found = 1
 
     if (found == 0):
