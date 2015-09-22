@@ -58,7 +58,7 @@ found = 0
 for i in range(len(velib)):
     station = dict(velib[i])
     if (station['city'] == invar):
-        return station
+        print(station)
         found = 1
 
 if (found == 0):
