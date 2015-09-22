@@ -6,7 +6,7 @@ Created on Mon Sep 21 10:38:13 2015
 """
 
 
-def check_my_city(city):
+def check_my_city(invar):
     city = invar + '-'
     velib = \
         [{'address': 'RUE DES CHAMPEAUX (PRES DE LA GARE ROUTIERE)\
