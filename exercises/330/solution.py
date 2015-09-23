@@ -11,4 +11,3 @@ def load_jason(path):
     with open(path) as jayson:
         out = json.load(jayson)
     return out
-
