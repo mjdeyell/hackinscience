@@ -9,4 +9,4 @@ output = [1, 2]
 for i in range(2, n):
     x = output[i-2] + output[i-1]
     output.append(x)
-print(", ".join(str(e) for e in out))
+print(", ".join(str(e) for e in output))
