@@ -29,7 +29,7 @@ euler = '73167176531330624919225119674426574742355349194934' + \
 
 highest_product = 0
 for i in range(12, len(euler)):
-    splice = euler[i-12:i]
+    splice = euler[i-13:i]
     product = 1
     for k in range(len(splice)):
         product = product * int(splice[k])
