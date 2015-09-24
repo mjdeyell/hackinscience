@@ -10,7 +10,7 @@ backward = -1
 d_ascii = ascii_lowercase + ascii_lowercase
 
 
-def caeser_cypher(s, key, method):
+def caesar_cypher(s, key, method):
     try:
         s_input = s.lower()
         output_string = []
