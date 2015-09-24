@@ -22,7 +22,7 @@ def caeser_cypher(s, key, method):
                     for l in range(len(ascii_lowercase)):
                         if (input_string[i][k] == ascii_lowercase[l]):
                             coded_word = coded_word +\
-                                         double_ascii[l + (key * method)]
+                                        double_ascii[l + (key * method)]
                 output_string.append(coded_word)
         elif (key > 26):
             lower_key = key % 26
@@ -32,7 +32,7 @@ def caeser_cypher(s, key, method):
                     for l in range(len(ascii_lowercase)):
                         if (input_string[i][k] == ascii_lowercase[l]):
                             coded_word = coded_word +\
-                                         double_ascii[l + (lower_key * method)]
+                                        double_ascii[l + (lower_key * method)]
                 output_string.append(coded_word)
         out_put = ' '.join(str(e) for e in output_string)
         return out_put
