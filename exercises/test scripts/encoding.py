@@ -10,10 +10,11 @@ backward = -1
 ascii_lc = ascii_lowercase
 d_ascii = ascii_lowercase + ascii_lowercase
 
-s = 'I @m going to encode th!s bitch'
+s = 'I @m going to Encode th!s bitch'
 key = 7
 method = forward
 
+case = s.split()
 s_input = s.lower()
 o_s = []
 i_s = s_input.split()
@@ -26,9 +27,19 @@ for i in range(len(i_s)):
     for k in range(len(i_s[i])):
         try:
             if (ascii_lc.index(i_s[i][k]) >= 0):
-                code = (code + d_ascii[ascii_lc.index(i_s[i][k]) +
-                        ukey * method])
+                if (i_s[i][k] == case[i][k]):
+                    code = (code + d_ascii[ascii_lc.index(i_s[i][k]) +
+                            (ukey * method)])
+                else:
+                    code = (code + d_ascii[ascii_lc.index(i_s[i][k]) +
+                            (ukey * method)].upper())
         except Exception:
             code = code + i_s[i][k]
     o_s.append(code)
 print(' '.join(str(e) for e in o_s))
+
+if (i_s[0][0] == case[0][0]):
+    print('yes')
+else:
+    test = (d_ascii[ascii_lc.index(i_s[0][0]) + (ukey * method)])
+    print(test.upper())

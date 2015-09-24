@@ -15,6 +15,7 @@ def caesar_cypher(s, key, method):
     try:
         s_input = s.lower()
         o_s = []
+        case = s.split()
         i_s = s_input.split()
         if (key > 26):
             ukey = key % 26
@@ -25,8 +26,12 @@ def caesar_cypher(s, key, method):
             for k in range(len(i_s[i])):
                 try:
                     if (ascii_lc.index(i_s[i][k]) >= 0):
-                        code = (code + d_ascii[ascii_lc.index(i_s[i][k]) +
-                                (ukey * method)])
+                        if (i_s[i][k] == case[i][k]):
+                            code = (code + d_ascii[ascii_lc.index(i_s[i][k]) +
+                                    (ukey * method)])
+                        else:
+                            code = (code + d_ascii[ascii_lc.index(i_s[i][k]) +
+                                    (ukey * method)].upper())
                 except Exception:
                     code = code + i_s[i][k]
             o_s.append(code)
