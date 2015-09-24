@@ -38,9 +38,3 @@ def caeser_cypher(s, key, method):
         return out_put
     except Exception:
         print('Input error')
-
-# test_input_string = 'Is it I want to encode this string'
-# test_output_string = caeser_cypher(test_input_string, 66, forward)
-# print(test_output_string)
-# test_decode_string = caeser_cypher(test_output_string, 66, backward)
-# print(test_decode_string)
