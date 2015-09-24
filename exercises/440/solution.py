@@ -21,9 +21,9 @@ def filtered(items, lambda_expression):
 # print(odd)
 
 if __name__ == '__main__':
-    x1 = filtered(range(1, 101), lambda x: x % 3 == 0)
+    x1 = filtered(range(0, 101), lambda x: x % 3 == 0)
     print(', '.join(str(e) for e in x1))
-    x2 = filtered(range(1, 101), lambda x: x % 5 == 0)
+    x2 = filtered(range(0, 101), lambda x: x % 5 == 0)
     print(', '.join(str(e) for e in x2))
-    x3 = filtered(range(1, 101), lambda x: x % 15 == 0)
+    x3 = filtered(range(0, 101), lambda x: x % 15 == 0)
     print(', '.join(str(e) for e in x3))
